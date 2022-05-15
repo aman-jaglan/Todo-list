@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
+
+body{
+    background-color: darkcyan;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1{
+    color: red;
+    font-size: medium;
+    font-style: italic;
 }
+
+#root{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.addtask{
+    height: 10vh;
+    width: 100vw;
+    margin: 3px;
+    border-radius: 5px;
+
+}
+
+.addtask form{
+   
+    height: 100%;
+    width: 30%;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.addtask form input{
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.addtask form input[type="button"]{
+    cursor: pointer;
+
+}
+.addtask form input[type="button"]:hover{
+    background-color: antiquewhite;
+}
+
+.tasklist{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.tasklist .Todo{
+    height: 100%;
+    width: 50%;
+    padding: 2px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.tasklist .Finished{
+    height: 100%;
+    width: 50%;
+    padding: 2px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+ .tasklist .content{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding-top: 30px;
+    
+}
+
+.tasklist .content .headDesc{
+    height: 15%;
+    width: 100%;
+    background-color: teal;
+    color: white;
+    font-size: 30px;
+    padding-top: 40px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.tasklist .content .list{
+    height: 70%;
+    width: 100%;
+    background-color: antiquewhite;
+    color:black;
+    font-size: 17px;
+    overflow-y: auto;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    font-style: oblique;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+.tasklist .content .list div{
+    border-bottom: 2px solid red;
+    padding: 10px 10px;
+}
+
+.tasklist .content .list div span{
+    margin: 15px 20px;
+}
+
+.tasklist .content .list div span i{
+    padding-top: 20px;
+    cursor: pointer;
+}
+.tasklist .content .list div span i:hover{
+    color:blueviolet;
+}
+
